@@ -12,7 +12,7 @@ btnU = document.querySelector('#btnU');
 btnU.onclick = function () { 
 if(btnU.onclick) {
 
-    if(numero1.value && numero2.value < 0 || numero1.value < 0 || numero1.value < 0 && numero2.value > 0) {
+    if(numero1.value && numero2.value < 0 || numero1.value < 0 || numero1.value < 0 && numero2.value > 0 || numero1.value === numero2.value) {
         alert('Você precisa por um número maior que 0');
         return btnU.onclick;
     }   
