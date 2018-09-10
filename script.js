@@ -18,7 +18,7 @@ if(btnU.onclick) {
     }
 
     if(numero1.value && numero2.value < 0 || numero1.value < 0 || numero1.value < 0 && numero2.value > 0 ) {
-        alert('Você precisa por um número maior que 0');
+        alert('Você precisa por um número maior ou igual a 0');
         return btnU.onclick;
 
       
@@ -29,7 +29,6 @@ if(btnU.onclick) {
         return btnU.onclick;
     }
     let resultado =  Math.floor(Number(Math.random()  * [numero2.value] + [numero1.value]));
-    console.log(resultado);
 
     btnChut = document.querySelector('#chute');
     document.querySelector(".text-in").classList.add("ocultar");
